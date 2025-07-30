@@ -16,7 +16,7 @@ export function useMovies(query) {
           setIsLoading(true);
           setError("");
           const res = await fetch(
-            `http://www.omdbapi.com/?i=tt3896198&apikey=${
+            `https://www.omdbapi.com/?i=tt3896198&apikey=${
               import.meta.env.VITE_OMDB_KEY
             }&s=${query}`,
             { signal: controller.signal }

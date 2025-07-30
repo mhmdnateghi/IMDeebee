@@ -304,7 +304,7 @@ const MovieDetails = ({ selectedId, onCloseMovie, onAddWatched, watched }) => {
       async function getMovieDetails() {
         setIsLoading(true);
         const res = await fetch(
-          `http://www.omdbapi.com/?i=${selectedId}&apikey=${
+          `https://www.omdbapi.com/?i=${selectedId}&apikey=${
             import.meta.env.VITE_OMDB_KEY
           }`
         );
