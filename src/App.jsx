@@ -3,6 +3,7 @@ import StarRating from "./StarRating";
 import { useMovies } from "./useMovies";
 import { useLocalStorageState } from "./useLocalStorageState";
 import { useKey } from "./useKey";
+import logo from "/logo.png";
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -128,8 +129,8 @@ const Logo = () => {
   return (
     <>
       <div className="logo">
-        <h1>IMDeeBee</h1>
-        <span role="img">🍿</span>
+        <h1>IMDeebee</h1>
+        <img src={logo} alt="Logo" />
       </div>
     </>
   );
